@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Demo Clínicas Dentales</title>
+    
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
     <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            width: 100%; 
-            overflow: hidden; 
-            background-color: #000; 
+            width: 100%; height: 100%; 
+            overflow: hidden; background-color: #000; 
+            position: fixed; /* Evita el rebote en iOS */
         }
         iframe { 
             border: none; 
-            width: 100vw; 
-            height: 100vh; 
-            display: block; 
+            width: 100%; 
+            height: 100%; 
+            display: block;
         }
     </style>
 </head>
 <body>
     <iframe 
-        src="https://disc-blur-12066998.figma.site/?embed=1&hide-ui=1" 
+        src="https://disc-blur-12066998.figma.site/?embed=1&hide-ui=1&scaling=scale-down-width&content-scaling=fixed" 
         allow="autoplay; fullscreen"
         allowfullscreen>
     </iframe>
 </body>
 </html>
+
